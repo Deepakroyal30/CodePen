@@ -1,0 +1,53 @@
+nav {
+    background-color: #1e1f26ec;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+    width: 100%;
+  }
+  
+  .Navbar-container {
+    height: 70%;
+    width: 100%;
+    display: flex;
+    color: white;
+    padding: 0 20px;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .Navbar-container svg {
+    display: block;
+    fill: none;
+    margin: 0 auto;
+    stroke-width: 2.3;
+    stroke-linejoin: round;
+    stroke-linecap: round;
+    height: 100%;
+    width: 150px;
+  }
+  
+  .btn-container {
+    display: flex;
+    gap: 20px;
+  }
+  
+  nav .btn-container button {
+    height: 35px;
+    width: 80px;
+    border: none;
+    background-color: #444857;
+    color: white;
+  }
+  
+  .btn-container .btn1 {
+    background-color: #47cf73;
+    color: black;
+  }
+  .btn-container .btn2 {
+    background-color:#444857;
+    color: #fff;
+  }
+  
+  

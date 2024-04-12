@@ -1,18 +1,21 @@
-import logo from './logo.svg';
+import React from 'react';
+import { Routes, Route } from 'react-router-dom';
+import Navbar from './components/Navbar';
 import './App.css';
-import LandingScreen from './screens/LandingScreen';
-import { createContext, useState } from 'react';
-import BudgetContext from './components/BudgetContext';
+import StartCoding from './components/StartCoding';
+import Compiler from './components/Compiler';
+import RegisterAndLogin from './RegisterAndLogin'; // Import RegisterAndLogin component
 
 function App() {
-  const totalBudget = 2000;
-  const [totalSpend, setTotalSpend] = useState(0);
-  const [expenses, setExpenses] = useState([]);
-
   return (
-    <BudgetContext.Provider value={{totalBudget,totalSpend,setTotalSpend, expenses,setExpenses}}>
-      <LandingScreen/>
-    </BudgetContext.Provider>
+    <div>
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<StartCoding />} />
+        <Route path="/Compiler" element={<Compiler />} />
+        <Route path="/auth" element={<RegisterAndLogin />} /> {/* Add this route */}
+      </Routes>
+    </div>
   );
 }
 

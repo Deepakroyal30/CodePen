@@ -1,0 +1,71 @@
+.box {
+    position: relative;
+    z-index: 2;
+    padding: .875rem 0;
+    font-size: 1.1rem;
+    align-items: center;
+    background: #000000cf;
+    border-radius: 4px;
+    display: block;
+    justify-content: center;
+    box-sizing: border-box;
+    height: 100%;
+    width: 190px;
+    margin: 10% auto;
+    text-align: center;  
+    border: 3.5px solid transparent;
+    cursor: pointer;
+
+}
+.background {
+    background: linear-gradient(to right, #007bff, #007bff46);
+
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+.box p {
+    color: white;
+    font-size: 24px;
+    font-weight: 600;
+    margin: 0;
+    padding: 15px;
+}.box p {
+    
+    background: linear-gradient(to right, rgba(0, 168, 253, 1), #fff 35%, #e00a95,rgb(15, 112, 239));
+    background-size: 200% auto;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: gradient 3s linear infinite;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 75%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 70%;
+    }
+}
+
+.box {
+    border-image: linear-gradient(to right, red, orange, yellow, green, blue, indigo) 1; /* Adjust the angle and colors as needed */
+    border-image-slice: 1; 
+    animation: rotate 2s infinite ease-in-out;
+}
+
+@keyframes rotate {
+    0% {
+        border-image: linear-gradient(to right, red, orange, yellow, green, blue, indigo) 1; 
+    }
+    100% {
+        border-image: linear-gradient(to right, orange, red, indigo,blue, green, yellow) 1; 
+    }
+}
+.box-link{
+    text-decoration: none;
+}
